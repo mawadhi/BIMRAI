@@ -1,1 +1,1 @@
-# Building Information Modeling and Rendering for Artificial Intelligence
+# Building Information Modeling and Rendering for Artificial Intelligence (BIMrAI)
