@@ -3,7 +3,7 @@ Teaching AI machines to detect building objects is at the foundation toward achi
 
 This project trained artificial neural networks solely on computer generated images of 3D paremetric buildings models—which were automatically-generated using the Building Information Modeling Generation Environment (BIMGenE) program developed in Grasshopper. The AI training result demonstrated accurate semantic segmenation on arbitrary photos of buildings.
 
-This repository documents the tools and process used in this project to train the neural networks with BIM and CGI.
+This repository documents the tools used in this project to train the neural networks with BIM and CGI.
 
 # Prerequisites
 - Win64 Anaconda 4.8.4 + Python 3.6.10
