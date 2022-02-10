@@ -10,3 +10,6 @@ This repository documents the ANN training implementation of this project.
 - NVIDIA GPU + 11 GB VRAM or more
 - envTensorflow: tensorflow 1.13.1, cudnn 7.6.5, cudatoolkit 10.0.130
 - envPyTorch: pytorch 1.1.0, cudatoolkit 9.0
+
+# Creating the Dataset
+Files used for creating the parametric-BIM training dataset can be found [here](https://github.com/mawadhi/BIMrAI/tree/main/bimgene). These include the generated FBX files from BIMGenE and HDRI images used for rendering. Preparing images and formatting the training data depends on the ANN model. There are example training datasets that can be followed. For GAN the example is found [here](https://github.com/mawadhi/BIMrAI/tree/main/tensorflow/example_training_dataset) (for Tensorflow) and [here](https://github.com/mawadhi/BIMrAI/tree/main/pytorch/datasets/example_training_dataset) (for PyTorch). For conventional semantic-segmentation CNNs the example is found [here](https://github.com/mawadhi/BIMrAI/tree/main/segment/example_training_dataset). 
