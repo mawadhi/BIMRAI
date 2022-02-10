@@ -1,0 +1,7 @@
+name,r,g,b
+Background,0,0,0
+Column,255,0,0
+Door,212,0,255
+Roof,0,255,0
+Wall,0,0,255
+Window,0,212,255

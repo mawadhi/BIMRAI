@@ -1,0 +1,38 @@
+
+(envSegment) C:\Users\Mohammad>d:
+
+(envSegment) D:\>cd segment
+
+(envSegment) D:\segment>python eval.py
+2022-01-09 01:35:28.760573: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_100.dll
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From D:\segment\frontends\mobilenet_base.py:401: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+WARNING:tensorflow:From D:\segment\frontends\inception_utils.py:37: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+Loading the data ...
+Performing evaluation. Make sure to delete or move Evaluate folder before each run.
+Running test image 3 / 12C:\Users\Mohammad\Anaconda3\envs\envSegment\lib\site-packages\sklearn\metrics\_classification.py:1221: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Running test image 12 / 12Average test accuracy =  0.552056630452474
+Average per class test accuracies =
+
+Background = 0.735077
+Column = 0.750796
+Door = 0.584037
+Roof = 0.237466
+Wall = 0.425197
+Window = 0.194040
+Average precision =  0.5796116332597955
+Average recall =  0.552056630452474
+Average F1 score =  0.5554756767102187
+Average mean IoU score =  0.23753627509162165
+
+(envSegment) D:\segment>

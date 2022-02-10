@@ -1,0 +1,1 @@
+The FBX and HDRI files provided here were used to create the parametric-BIM dataset.
