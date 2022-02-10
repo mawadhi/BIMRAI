@@ -1,5 +1,5 @@
 # Building Information Modeling and Rendering for Artificial Intelligence (BIMrAI)
-Teaching AI machines to detect building objects is at the foundation toward achieving AI-assisted 3D recostruction of builidings. However, there exists the challenge of acquiring enough training data for deep learning that is typically manually-annotated. 
+Teaching AI machines to detect building objects is at the foundation toward achieving AI-assisted 3D recostruction of builidings. However, there exists the challenge of acquiring enough training data for deep learning that is typically manually-annotated. But what if a machine can generate its own data to train itself?
 
 This project trained artificial neural networks (ANNs) solely on computer generated images of 3D paremetric buildings models—which were automatically-generated using the Building Information Modeling Generation Environment (BIMGenE) program developed in Grasshopper. The AI training result demonstrated accurate semantic segmenation on arbitrary photos of buildings.
 
