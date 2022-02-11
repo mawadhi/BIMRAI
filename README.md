@@ -21,6 +21,4 @@ Files used for creating the parametric-BIM training dataset can be found [here](
 
 ![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/bimgene.jpg)
 
-Renderings should inlcude object-ID render passes (similar to the examples linked below). 
-
-Preparing images and formatting the training data depends on the ANN model. There are provided examples that can be followed. For GAN the example is found [here](https://github.com/mawadhi/BIMrAI/tree/main/tensorflow/example_training_dataset) (for Tensorflow) and [here](https://github.com/mawadhi/BIMrAI/tree/main/pytorch/datasets/example_training_dataset) (for PyTorch). For conventional semantic-segmentation CNNs, the example is found [here](https://github.com/mawadhi/BIMrAI/tree/main/segment/example_training_dataset). 
+Renderings should inlcude object-ID render passes. Preparing images and formatting the training data depends on the ANN model. There are provided examples that can be followed. For GAN the example is found [here](https://github.com/mawadhi/BIMrAI/tree/main/tensorflow/example_training_dataset) (for Tensorflow) and [here](https://github.com/mawadhi/BIMrAI/tree/main/pytorch/datasets/example_training_dataset) (for PyTorch). For conventional semantic-segmentation CNNs, the example is found [here](https://github.com/mawadhi/BIMrAI/tree/main/segment/example_training_dataset). 
