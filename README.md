@@ -82,9 +82,10 @@ python test.py --dataroot ./datasets/example_training_dataset --name example_tra
 
 ## Results
 
-|Sample|Accuracy (%)|Wall (%)|Window (%)|Door (%)|Column (%)|Roof (%)|Background (%)|Mean IoU|
+|Test Sample|Accuracy (%)|Wall (%)|Window (%)|Door (%)|Column (%)|Roof (%)|Background (%)|Mean IoU|
 |-|-|-|-|-|-|-|-|-|
-|-|-|-|-|-|-|-|-|-|
+|Hand-Picked|-|-|-|-|-|-|-|-|
+|Random|-|-|-|-|-|-|-|-|
 
 
 
