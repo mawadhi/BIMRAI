@@ -19,6 +19,8 @@ This repository documents the ANN training implementation of this project.
 # Creating the Dataset
 Files used for creating the parametric-BIM training dataset can be found [here](https://github.com/mawadhi/BIMrAI/tree/main/bimgene). They include the generated FBX files (from BIMGenE) and the HDRI images that can be used for rendering in a 3D graphics software. These same files were used to create the training data that produced the [results](https://github.com/mawadhi/BIMrAI/tree/main/results) of this project.
 
-![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/bimgene.jpg) ![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/bimgene2.jpg)
+![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/bimgene.jpg) 
+
+![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/bimgene2.jpg)
 
 Renderings should inlcude object-ID render passes. Preparing images and formatting the training data depends on the ANN model. There are provided examples that can be followed. For GAN the example is found [here](https://github.com/mawadhi/BIMrAI/tree/main/tensorflow/example_training_dataset) (for Tensorflow) and [here](https://github.com/mawadhi/BIMrAI/tree/main/pytorch/datasets/example_training_dataset) (for PyTorch). For conventional semantic-segmentation CNNs, the example is found [here](https://github.com/mawadhi/BIMrAI/tree/main/segment/example_training_dataset). 
