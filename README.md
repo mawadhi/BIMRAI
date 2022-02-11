@@ -29,7 +29,11 @@ Renderings should inlcude object-ID render passes. Preparing images and formatti
 
 ### GAN Train/Test
 
-In the Anaconda prompt, to train:
+- In the Anaconda prompt, to train:
+
 ```
-dcdfd
+cd tensorflow
+python pix2pix.py --mode train --output_dir example_training_dataset_train --max_epochs 200 --input_dir example_training_dataset/train --which_direction AtoB
 ```
+
+To test
