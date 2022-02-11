@@ -29,7 +29,7 @@ Renderings should inlcude object-ID render passes. Preparing images and formatti
 
 ### Image-to-Image Translation Train/Test
 
-- In the Anaconda prompt, to train the model:
+- Navigate to the Tensorflow environment in the Anaconda prompt, then to train the model:
 ```
 cd tensorflow
 python pix2pix.py --mode train --output_dir example_training_dataset_train --max_epochs 200 --input_dir example_training_dataset/train --which_direction AtoB
@@ -46,7 +46,7 @@ python pix2pix.py --mode test --output_dir example_training_dataset_test --input
 - To train the model:
 ```
 cd segment
-python train.py --num_epochs 200 --dataset example_training_dataset --crop_height 256 --crop_width 256 --batch_size 32 --num_val_images 1 --model BiSeNet
+python train.py --num_epochs 200 --dataset example_training_dataset --crop_height 256 --crop_width 256 --batch_size 1 --num_val_images 1 --model BiSeNet
 ```
 
 - To test the model:
@@ -56,3 +56,17 @@ python test.py --dataset example_training_dataset --crop_height 256 --crop_width
 ```
 
 To train/test using MobileUNET or PSPNet, simply replace BiSeNet with the desired model. Note: PSPNet requires a ResNet101 front end. To train add ```--frontend ResNet101``` at the end.
+
+## PyTorch
+
+- Navigate to the PyTorch environment in the Anaconda prompt, then to train the model:
+```
+cd pytorch
+python train.py --dataroot ./datasets/example_training_dataset --name example_training_dataset_pix2pix --model pix2pix --batch_size 1 --n_epochs 25 --n_epochs_decay 25 --direction AtoB
+```
+
+- To test the model:
+```
+cd pytorch
+python test.py --dataroot ./datasets/example_training_dataset --name example_training_dataset_pix2pix --model pix2pix --num_test 1 --epoch 50 --no_dropout --direction AtoB
+```
