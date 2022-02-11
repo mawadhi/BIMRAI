@@ -40,3 +40,19 @@ python pix2pix.py --mode train --output_dir example_training_dataset_train --max
 cd tensorflow
 python pix2pix.py --mode test --output_dir example_training_dataset_test --input_dir example_training_dataset/test --checkpoint example_training_dataset_train
 ```
+
+### Conventional CNN Train/Test
+
+- To train:
+```
+cd segment
+python train.py --num_epochs 200 --dataset example_training_dataset --crop_height 256 --crop_width 256 --batch_size 32 --num_val_images 1 --model BiSeNet
+```
+
+- To test:
+```
+cd segment
+python test.py --dataset example_training_dataset --crop_height 256 --crop_width 256 --model BiSeNet --checkpoint_path checkpoints/latest_model_example_training_dataset.ckpt
+```
+
+To train/test using MobileUNET or PSPNet, simply replace BiSeNet with the desired model (note: PSPNet requires a ResNet101 front end).
