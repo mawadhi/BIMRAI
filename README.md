@@ -90,7 +90,7 @@ The following test scores were achieved after training Pix2pix with the parametr
 |Arbitrary Photos (Hand-Picked)|86.39|0.672|
 |Arbitrary Photos (Random)|80.52|0.561|
 
-The following images are a small sample of the results on the arbitrary building photos (evaluated samples can be found in the results folder):
+The following images are a small sample of the results on the arbitrary building photos (all evaluated samples can be found in the results folder):
 
 |Test Photo|Ground Truth|Prediction|
 |-|-|-|
