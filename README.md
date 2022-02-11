@@ -4,9 +4,9 @@
 
 ## Description
 
-Teaching AI machines to detect building objects is at the foundation toward achieving AI-assisted 3D recostruction of builidings. However, there exists the challenge of acquiring enough training data for deep learning that is typically manually-annotated. This is unless if a machine can generate its own data to train itself.
+Teaching AI machines to detect building objects is at the foundation toward achieving AI-assisted 3D reconstruction of buildings. However, there exists the challenge of acquiring enough training data for deep learning that is typically manually annotated. This is unless a machine can generate its own data to train itself.
 
-This project trained artificial neural networks (ANNs) solely on realisitc computer-generated images of 3D building information models—which were parametrically and automatically-generated using the Building Information Modeling Generation Environment (BIMGenE) program developed in Grasshopper. The ANN training result demonstrated accurate semantic segmenation on arbitrary photos of buildings.
+This project trained artificial neural networks (ANNs) solely on realistic computer-generated images of 3D building information models—which were parametrically and automatically generated using the Building Information Modeling Generation Environment (BIMGenE) program developed in Grasshopper. The ANN training result demonstrated accurate semantic segmentation on arbitrary photos of buildings.
 
 This repository documents the ANN training implementation of this project.
 
@@ -17,13 +17,13 @@ This repository documents the ANN training implementation of this project.
 - envPyTorch: pytorch 1.1.0, cudatoolkit 9.0
 
 ## Creating the Dataset
-Files used for creating the parametric-BIM training dataset can be found [here](https://github.com/mawadhi/BIMrAI/tree/main/bimgene). They include the generated FBX files (from BIMGenE) and the HDRI images that can be used for rendering in a 3D graphics software. These same files were used to create the training data that produced the [results](https://github.com/mawadhi/BIMrAI/tree/main/results) of this project.
+Files used for creating the parametric-BIM training dataset can be found [here](https://github.com/mawadhi/BIMrAI/tree/main/bimgene). They include the generated FBX files (from BIMGenE) and the HDRI images that can be used for rendering in 3D graphics software. These same files were used to create the training data that produced the [results](https://github.com/mawadhi/BIMrAI/tree/main/results) of this project.
 
 ![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/bimgene.jpg) 
 
 ![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/bimgene2.jpg)
 
-Renderings should inlcude object-ID render passes. Preparing images and formatting the training data depends on the ANN model. There are provided examples that can be followed. For image-to-image translation GAN the example is found [here](https://github.com/mawadhi/BIMrAI/tree/main/tensorflow/example_training_dataset) (for Tensorflow) and [here](https://github.com/mawadhi/BIMrAI/tree/main/pytorch/datasets/example_training_dataset) (for PyTorch). For conventional semantic-segmentation CNNs, the example is found [here](https://github.com/mawadhi/BIMrAI/tree/main/segment/example_training_dataset). 
+Renderings should include object-ID render passes. Preparing images and formatting the training data depends on the ANN model. There are provided examples that can be followed. For image-to-image translation GAN the example is found [here](https://github.com/mawadhi/BIMrAI/tree/main/tensorflow/example_training_dataset) (for Tensorflow) and [here](https://github.com/mawadhi/BIMrAI/tree/main/pytorch/datasets/example_training_dataset) (for PyTorch). For conventional semantic-segmentation CNNs, the example is found [here](https://github.com/mawadhi/BIMrAI/tree/main/segment/example_training_dataset). 
 
 ## TensorFlow
 
@@ -32,7 +32,7 @@ Renderings should inlcude object-ID render passes. Preparing images and formatti
 This ANN model is a TensorFlow implementation of Pix2pix (Isola et al. 2016) by [affinelayer](https://github.com/affinelayer/pix2pix-tensorflow). 
 The original paper can be found in the following link: [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004v1).
 
-- Navigate to the Tensorflow environment in the Anaconda prompt, then to train the model:
+- Navigate to the Tensorflow environment in the Anaconda prompt, then, to train the model:
 ```
 cd tensorflow
 python pix2pix.py --mode train --output_dir example_training_dataset_train --max_epochs 200 --input_dir example_training_dataset/train --which_direction AtoB
@@ -68,7 +68,7 @@ This ANN model is a PyTorch implementation of Pix2pix (Isola et al. 2016) by [ju
 
 ### Image-to-Image Translation Train/Test
 
-- Navigate to the PyTorch environment in the Anaconda prompt, then to train the model:
+- Navigate to the PyTorch environment in the Anaconda prompt, then, to train the model:
 ```
 cd pytorch
 python train.py --dataroot ./datasets/example_training_dataset --name example_training_dataset_pix2pix --model pix2pix --batch_size 1 --n_epochs 25 --n_epochs_decay 25 --direction AtoB
