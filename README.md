@@ -88,8 +88,15 @@ python test.py --dataroot ./datasets/example_training_dataset --name example_tra
 |Arbitrary Photos (Hand-Picked)|86.39|0.672|
 |Arbitrary Photos (Random)|80.52|0.561|
 
+|Test Photo|Ground Truth|Prediction|
+|-|-|-|
+|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/eval_dataset/test/1%20(1).png)|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(1)_gt.png)|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(1)_pred.png)|
 
+|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/eval_dataset/test/1%20(5).png)|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(5)_gt.png)|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(5)_pred.png)|
 
+|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/eval_dataset/test/1%20(1).png)|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(1)_gt.png)|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(1)_pred.png)|
+
+|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/eval_dataset/test/1%20(1).png)|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(1)_gt.png)|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(1)_pred.png)|
 
 
 
