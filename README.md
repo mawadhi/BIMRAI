@@ -80,6 +80,15 @@ cd pytorch
 python test.py --dataroot ./datasets/example_training_dataset --name example_training_dataset_pix2pix --model pix2pix --num_test 1 --epoch 50 --no_dropout --direction AtoB
 ```
 
+## Evaluation
+
+To use the evaluation tool, prepare the evaluation dataset in segment/eval_dataset, then run the following:
+```
+cd segment
+python eval.py
+```
+This will create an "Evaluate" folder in the same directory. The evaluation metrics will be listed in the terminal and saved in a .csv file titled "test_scores".
+
 ## Results
 
 The following test scores were achieved after training Pix2pix with the parametric-BIM dataset for approximately 4 days. The training dataset size was 660,000 images and the batch size was 128. The learning rate was set to 0.0002 and the model was trained for 50 epochs. The only augmentation done was random flipping of the images. The original test case was a photoset of a building sample that was used to fine-tune the model. The arbitrary test photos were acquired from Wikimedia Commons.
