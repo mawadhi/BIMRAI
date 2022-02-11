@@ -90,14 +90,7 @@ python test.py --dataroot ./datasets/example_training_dataset --name example_tra
 
 |Test Photo|Ground Truth|Prediction|
 |-|-|-|
-|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/eval_dataset/test/1%20(1).png)|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(1)_gt.png)|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(1)_pred.png)|
-
-|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/eval_dataset/test/1%20(5).png)|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(5)_gt.png)|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(5)_pred.png)|
-
-|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/eval_dataset/test/1%20(1).png)|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(1)_gt.png)|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(1)_pred.png)|
-
-|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/eval_dataset/test/1%20(1).png)|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(1)_gt.png)|![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(1)_pred.png)|
-
-
-
-
+|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/eval_dataset/test/1%20(1).png" width="160" />|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(1)_gt.png" width="160" />|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(1)_pred.png" width="160" />|
+|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/eval_dataset/test/1%20(5).png" width="160" />|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(5)_gt.png" width="160" />|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(5)_pred.png" width="160" />|
+|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/eval_dataset/test/1%20(6).png" width="160" />|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(6)_gt.png" width="160" />|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(6)_pred.png" width="160" />|
+|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim_random/eval_dataset/test/1%20(8).png" width="160" />|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim_random/Evaluate/1%20(8)_gt.png" width="160" />|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim_random/Evaluate/1%20(8)_pred.png" width="160" />|
