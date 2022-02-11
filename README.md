@@ -55,4 +55,4 @@ cd segment
 python test.py --dataset example_training_dataset --crop_height 256 --crop_width 256 --model BiSeNet --checkpoint_path checkpoints/latest_model_example_training_dataset.ckpt
 ```
 
-To train/test using MobileUNET or PSPNet, simply replace BiSeNet with the desired model (note: PSPNet requires a ResNet101 front end).
+To train/test using MobileUNET or PSPNet, simply replace BiSeNet with the desired model. Note: PSPNet requires a ResNet101 front end. To train add ```--frontend ResNet101``` at the end.
