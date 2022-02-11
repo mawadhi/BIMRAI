@@ -84,8 +84,11 @@ python test.py --dataroot ./datasets/example_training_dataset --name example_tra
 
 |Test Sample|Accuracy (%)|Wall (%)|Window (%)|Door (%)|Column (%)|Roof (%)|Background (%)|Mean IoU|
 |-|-|-|-|-|-|-|-|-|
-|Hand-Picked|86.39|85.33|88.35|68.44|100.0|71.87|91.34|0.672|
+|Test Case|89.64|86.22|59.11|29.14|69.53|85.66|92.19|0.517|
+|Hand-Picked|86.39|85.33|88.35|68.44|100.0*|71.87|91.34|0.672|
 |Random|80.52|85.42|69.62|76.32|78.80|54.65|84.98|0.561|
+
+*True negative bias due to class absence in sample.
 
 
 
