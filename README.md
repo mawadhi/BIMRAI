@@ -1,4 +1,4 @@
-# Building Information Modeling and Rendering for Artificial Intelligence (BIMrAI)
+# Building Information Modeling and Rendering for Artificial Intelligence
 
 ![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/bimference.gif)
 
