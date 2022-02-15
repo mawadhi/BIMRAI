@@ -31,7 +31,7 @@ Renderings should include object-ID render passes. Preparing images and formatti
 
 ### Image-to-Image Translation Train/Test
 
-This ANN model is a TensorFlow implementation of Pix2pix (Isola et al. 2016) by [affinelayer](https://github.com/affinelayer/pix2pix-tensorflow). 
+This GAN model is a TensorFlow implementation of Pix2pix (Isola et al. 2016) by [affinelayer](https://github.com/affinelayer/pix2pix-tensorflow). 
 The original paper can be found in the following link: [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004v1).
 
 - Navigate to the Tensorflow environment in the Anaconda prompt, then, to train the model:
@@ -48,7 +48,7 @@ python pix2pix.py --mode test --output_dir example_training_dataset_test --input
 
 ### Semantic Segmentation Train/Test
 
-The following models were tested: [BiSeNet: Bilateral Segmentation Network for Real-time Semantic Segmentation](https://arxiv.org/abs/1808.00897), [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications](https://arxiv.org/abs/1704.04861), and [Pyramid Scene Parsing Network](https://arxiv.org/abs/1612.01105) (implementations by [GeorgeSeif](https://github.com/GeorgeSeif/Semantic-Segmentation-Suite)).
+The following CNN models were tested: [BiSeNet: Bilateral Segmentation Network for Real-time Semantic Segmentation](https://arxiv.org/abs/1808.00897), [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications](https://arxiv.org/abs/1704.04861), and [Pyramid Scene Parsing Network](https://arxiv.org/abs/1612.01105) (implementations by [GeorgeSeif](https://github.com/GeorgeSeif/Semantic-Segmentation-Suite)).
 
 - To train the model:
 ```
@@ -66,7 +66,7 @@ To train/test using MobileUNET or PSPNet, simply replace BiSeNet with the desire
 
 ## PyTorch
 
-This ANN model is a PyTorch implementation of Pix2pix (Isola et al. 2016) by [junyanz](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). 
+This GAN model is a PyTorch implementation of Pix2pix (Isola et al. 2016) by [junyanz](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). 
 
 ### Image-to-Image Translation Train/Test
 
