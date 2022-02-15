@@ -13,8 +13,8 @@ This repository documents the ANN training implementation of this project.
 ## Prerequisites
 - Win64 Anaconda 4.8.4 + Python 3.6.10
 - NVIDIA GPU + 11 GB VRAM or more
-- envTensorflow: tensorflow 1.13.1, cudnn 7.6.5, cudatoolkit 10.0.130
-- envPyTorch: pytorch 1.1.0, cudatoolkit 9.0
+- envTensorflow: tensorflow 1.13.1 + cudnn 7.6.5 + cudatoolkit 10.0.130
+- envPyTorch: pytorch 1.1.0 + cudatoolkit 9.0
 
 ## Creating the Dataset
 The parametric-BIM training dataset is not uploaded to this repository since it is too big for GitHub (close to 20 GB). However, files used for creating the dataset can be found [here](https://github.com/mawadhi/BIMrAI/tree/main/bimgene). They include the generated FBX files (from BIMGenE) and the HDRI images that can be used for rendering in 3D graphics software. These same files were used to create the training data that produced the [results](https://github.com/mawadhi/BIMrAI/tree/main/results) of this project. The files are made available for others to create similar datasets using rendering software of their choice.
