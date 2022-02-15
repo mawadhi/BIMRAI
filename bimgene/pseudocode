@@ -1,4 +1,4 @@
-//Define the following standard parameters:
+//Input the following standard parameters:
 
 BUILDING_FOOTPRINT_SHAPE =
 NUMBER_OF_FLOORS =
@@ -23,7 +23,7 @@ DIAMETER_OF_BOTTOM =
 PILASTER_PEDESTAL =
 PILASTER_FLUTING =
 
-//Define optional custom parameters (examples shown):
+//Input optional custom parameters (examples shown below):
 
 CUSTOM_INSERTION_POINTS_1 =
 CUSTOM_INSERTION_POINTS_2 =
@@ -40,43 +40,10 @@ CUSTOM_BIM_PART_5 =
 CUSTOM_BIM_PART_6 =
 CUSTOM_BIM_PART_7 =
 
-//Define variables:
+//Algorithm 1: Calculate Wall Polylines and Edges:
 
 initialize wall_polylines
 initialize wall_edges
-initialize bim_walls
-initialize ground_bim_walls
-initialize bim_roof
-initialize bim_slabs
-initialize wall_segment_points
-initialize opening_insertion_points
-initialize door_insertion_points
-initialize window_insertion_points
-initialize window_orientation
-initialize bim_windows
-initialize door_orientation
-initialize bim_doors
-initialize offset_wall_edges
-initialize offset_wall_vertices
-initialize a
-initialize quoin_angles
-initialize bim_quoins
-initialize bim_cornice
-initialize bim_pilasters
-
-initialize custom_insertion_points_per_wall
-initialize bim_custom_windows
-initialize custom_height_1
-initialize custom_height_2
-initialize custom_height_3
-initialize custom_height_4
-initialize custom_height_5
-initialize custom_height_6
-initialize custom_height_7
-initialize custom_insertion_points_8_per_wall
-initialize custom_height_8
-
-//Define functions:
 
 function vecZ(F) 
 	do //Create a unit vector parallel to the Z-axis multiplied by a factor (F).
@@ -94,31 +61,11 @@ function shift(L,N)
 function rev(L)
 	do //Reverse the order of items in an input data-tree list (L).
 	return value
-function wallSt1(BM,H,Th)
-	do //Define settings of a basic wall for the BIM software, where BM is
-	//building material, H is height, and Th is thickness.
-	return value
-function wall(C,S)
-	do //Create a wall for the BIM software defined by a reference line or
-	//curve (C) and settings (S).
-	return value
-function split(D,M)
-	do //Split a data tree (D) into two parts using a path mask (M) and return 
-	//the positive set of data branches that match the splitting mask.
-	return value
-function move(G,T)
-	do //Move (translate) a geometry (G) along a translation vector (T). 
-	return value
-function offset(C,Dn)
-	do //Offset the control-points of a curve (C) with a distance (Dn).
-	return value
-function roofSt(BM)
-	do //Define the building material (BM) of a roof for the BIM software.
-	return value
-function roof(Py,S)
-	do //Create a single-plane roof for the BIM software defined by a closed
-	//polygon (Py) and settings (S).
-	return value
-function slab(Py)
-	do //Create a slab for the BIM software defined by a closed polygon (Py).
-	return value
+	
+if data_stream = S(0) or S(1)
+	G = BUILDING_FOOTPRINT_SHAPE
+	Dr = vecZ(WALL_HEIGHT)
+	N = NUMBER_OF_FLOORS
+	wall_polylines = arrLin(G,Dr,N)
+	wall_edges = rev(shift(deBrE(wall_polylines),1))
+
