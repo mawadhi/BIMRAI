@@ -6,7 +6,7 @@
 
 Teaching AI machines to detect building objects is the foundation toward achieving AI-assisted 3D reconstruction of buildings. However, there exists the challenge of acquiring enough training data for machine learning, and this data is typically manually annotated. This is unless a machine can generate its own data to train itself.
 
-This project trained artificial neural networks (ANNs) solely on realistic computer-generated images of 3D building information models—which were parametrically and automatically generated using the **Building Information Model Generation Environment (BIMGenE)** [program](https://github.com/mawadhi/BIMRAI/tree/main/bimgene). The ANN training result demonstrated [accurate semantic segmentation](https://github.com/mawadhi/BIMRAI#results) on arbitrary photos of buildings.
+This project trained artificial neural networks (ANNs) solely on realistic computer-generated images of 3D building information models—which were parametrically and automatically generated using the Building Information Model Generation Environment (BIMGenE) [program](https://github.com/mawadhi/BIMRAI/tree/main/bimgene). The ANN training result demonstrated [accurate semantic segmentation](https://github.com/mawadhi/BIMRAI#results) on arbitrary photos of buildings.
 
 This repository documents the ANN training implementation of this project.
 
