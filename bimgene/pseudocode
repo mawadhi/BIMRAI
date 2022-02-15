@@ -23,7 +23,7 @@ DIAMETER_OF_BOTTOM =
 PILASTER_PEDESTAL =
 PILASTER_FLUTING =
 
-//Define custom parameters (examples shown):
+//Define optional custom parameters (examples shown):
 
 CUSTOM_INSERTION_POINTS_1 =
 CUSTOM_INSERTION_POINTS_2 =
@@ -39,6 +39,8 @@ CUSTOM_BIM_PART_4 =
 CUSTOM_BIM_PART_5 =
 CUSTOM_BIM_PART_6 =
 CUSTOM_BIM_PART_7 =
+
+//Define variables:
 
 initialize wall_polylines
 initialize wall_edges
@@ -61,8 +63,6 @@ initialize quoin_angles
 initialize bim_quoins
 initialize bim_cornice
 initialize bim_pilasters
-
-//Define variables:
 
 initialize custom_insertion_points_per_wall
 initialize bim_custom_windows
