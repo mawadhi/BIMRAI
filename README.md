@@ -17,7 +17,9 @@ This repository documents the ANN training implementation of this project.
 - envPyTorch: pytorch 1.1.0, cudatoolkit 9.0
 
 ## Creating the Dataset
-Files used for creating the parametric-BIM training dataset can be found [here](https://github.com/mawadhi/BIMrAI/tree/main/bimgene). They include the generated FBX files (from BIMGenE) and the HDRI images that can be used for rendering in 3D graphics software. These same files were used to create the training data that produced the [results](https://github.com/mawadhi/BIMrAI/tree/main/results) of this project.
+The parametric-BIM training dataset is not uploaded to this repository since it is too big for GitHub (close to 20 GB). However, files used for creating the dataset can be found [here](https://github.com/mawadhi/BIMrAI/tree/main/bimgene). They include the generated FBX files (from BIMGenE) and the HDRI images that can be used for rendering in 3D graphics software. These same files were used to create the training data that produced the [results](https://github.com/mawadhi/BIMrAI/tree/main/results) of this project. The files are made available for others to create similar datasets using rendering software of their choice.
+
+![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/bimgenelogo.jpg) 
 
 ![This is an image](https://github.com/mawadhi/BIMrAI/blob/main/bimgene.jpg) 
 
