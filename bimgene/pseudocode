@@ -62,6 +62,8 @@ initialize bim_quoins
 initialize bim_cornice
 initialize bim_pilasters
 
+//Define variables:
+
 initialize custom_insertion_points_per_wall
 initialize bim_custom_windows
 initialize custom_height_1
@@ -73,6 +75,8 @@ initialize custom_height_6
 initialize custom_height_7
 initialize custom_insertion_points_8_per_wall
 initialize custom_height_8
+
+//Define functions:
 
 function vecZ(F) 
 	do //Create a unit vector parallel to the Z-axis multiplied by a factor (F).
