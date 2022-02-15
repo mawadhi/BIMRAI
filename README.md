@@ -34,7 +34,7 @@ Renderings should include object-ID render passes. Preparing images and formatti
 This GAN model is a TensorFlow implementation of Pix2pix (Isola et al. 2016) by [affinelayer](https://github.com/affinelayer/pix2pix-tensorflow). 
 The original paper can be found in the following link: [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004v1).
 
-- Navigate to the Tensorflow environment in the Anaconda prompt, then, to train the model:
+- Navigate to the Tensorflow environment in the Anaconda prompt. Then, to train the model:
 ```
 cd tensorflow
 python pix2pix.py --mode train --output_dir example_training_dataset_train --max_epochs 200 --input_dir example_training_dataset/train --which_direction AtoB
@@ -50,13 +50,13 @@ python pix2pix.py --mode test --output_dir example_training_dataset_test --input
 
 The following CNN models were tested: [BiSeNet: Bilateral Segmentation Network for Real-time Semantic Segmentation](https://arxiv.org/abs/1808.00897), [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications](https://arxiv.org/abs/1704.04861), and [Pyramid Scene Parsing Network](https://arxiv.org/abs/1612.01105) (implementations by [GeorgeSeif](https://github.com/GeorgeSeif/Semantic-Segmentation-Suite)).
 
-- To train the model:
+- To train a model:
 ```
 cd segment
 python train.py --num_epochs 200 --dataset example_training_dataset --crop_height 256 --crop_width 256 --batch_size 1 --num_val_images 1 --model BiSeNet
 ```
 
-- To test the model:
+- To test a model:
 ```
 cd segment
 python test.py --dataset example_training_dataset --crop_height 256 --crop_width 256 --model BiSeNet --checkpoint_path checkpoints/latest_model_example_training_dataset.ckpt
@@ -70,7 +70,7 @@ This GAN model is a PyTorch implementation of Pix2pix (Isola et al. 2016) by [ju
 
 ### Image-to-Image Translation Train/Test
 
-- Navigate to the PyTorch environment in the Anaconda prompt, then, to train the model:
+- Navigate to the PyTorch environment in the Anaconda prompt. Then, to train the model:
 ```
 cd pytorch
 python train.py --dataroot ./datasets/example_training_dataset --name example_training_dataset_pix2pix --model pix2pix --batch_size 1 --n_epochs 25 --n_epochs_decay 25 --direction AtoB
