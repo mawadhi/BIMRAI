@@ -109,3 +109,14 @@ The following images are a small sample of the results on the arbitrary building
 |<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/eval_dataset/test/1%20(5).png" width="125" />|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(5)_gt.png" width="125" />|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(5)_pred.png" width="125" />|
 |<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/eval_dataset/test/1%20(6).png" width="125" />|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(6)_gt.png" width="125" />|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim/Evaluate/1%20(6)_pred.png" width="125" />|
 |<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim_random/eval_dataset/test/1%20(8).png" width="125" />|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim_random/Evaluate/1%20(8)_gt.png" width="125" />|<img src="https://github.com/mawadhi/BIMrAI/blob/main/results/gan_parametric_bim_random/Evaluate/1%20(8)_pred.png" width="125" />|
+
+## Credits
+
+Author: Mohammad Alawadhi  
+Ph.D. Advisor: Wei Yan  
+[BIM-SIM Group](https://www.arch.tamu.edu/impact/centers-institutes-outreach/crs-center/research/bim-sim/)  
+Texas A&M University  
+
+### Citation
+
+Alawadhi, M., & Yan, W. (2020). BIM Hyperreality: Data Synthesis Using BIM and Hyperrealistic Rendering for Deep Learning. ACADIA 2020: Distributed Proximities / Volume I: Technical Papers [Proceedings of the 40th Annual Conference of the Association of Computer Aided Design in Architecture (ACADIA) ISBN 978-0-578-95213-0]. Online and Global. 24-30 October 2020. Edited by B. Slocum, V. Ago, S. Doyle, A. Marcus, M. Yablonina, and M. Del Campo. 228-236. http://papers.cumincad.org/cgi-bin/works/paper/acadia20_228
